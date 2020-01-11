@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>add book</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+<h4>ADD A BOOK</h4>
+<form action="add">
+    <table>
+        <tr>
+            <td>
+                Isbn
+            </td>
+            <td>
+                <input type="text" name="isbn">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                author
+            </td>
+            <td>
+                <input type="text" name="author"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                title
+            </td>
+            <td>
+                <input type="text" name="title">
+            </td>
+        </tr>
+
+
+    </table>
+    <button type="submit" class="btn btn-info">Submit</button>
+</form>
+<script th:text="${script}"></script>
+</body>
+</html>
